@@ -1,0 +1,495 @@
+@font-face {
+    font-family: "Universal";
+    src: url("../font/universal-regular.ttf")
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    position: relative;
+    min-height: 100%;
+    font-size: 10px;
+}
+
+.background1 {
+    background: url(../img/bg.jpg) no-repeat 10% 50%; /* can use bg-size here (0 0/cover) but will not work on safari */
+}
+
+.background2 {
+    background: url("../img/page2/background2.png") no-repeat;
+}
+
+main {
+    padding-bottom: 50px;
+}
+
+header {
+    background-color: white;
+    position: relative;
+    font-family: "Universal";
+    /*min-height: 123px;*/
+    height: auto;
+}
+
+.header_container {
+    margin: 0 auto;
+    padding: 20px 0; /*&5 15*/
+    vertical-align: top;
+    max-width: 1024px;
+    box-sizing: border-box;
+    min-height: 100%; /*можна писати і в хедер*/
+
+}
+
+.logo {
+    float: left;
+    margin-right: 130px;
+    margin-left: 59px;
+}
+
+.header_container img+div, .lang_menu { /*як краще писати - цей і наступний код за зверненням до класів чи створити окремий клас для дісплей інлайн блок */
+    display: inline-block;
+}
+
+.search img+div{
+    display: inline-block;
+}
+#block_for_search div:last-child>.center_text {
+    transform: translateY(-4px);
+    margin-left: -7px;
+}
+.header_container li {
+    display: inline-block;
+    margin-right: 41px;
+    transform: translateY(50%);
+}
+
+.header_container ul li a {
+    text-decoration: none;
+    color: #22a8b2;
+    font-size: 1.363636em; /*15px!*/
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+.clear_both {
+    clear: both;
+}
+
+.lang_menu {
+    float: right;
+    transform: translateY(-10%);
+}
+
+.lang_menu li {
+    margin-right: -8px;
+    font-size: 1.090909em;
+    transform: translateY(100%);
+}
+
+.lang_menu li a {
+    background: url("../img/for_lang_menu.jpg") no-repeat 100% 4px;
+    padding: 0 5px; /*&&&*/
+}
+
+#block_for_search {
+    position: absolute;
+    right: 0;
+    top: 100%;
+}
+
+.lang_menu li img {
+    padding: 0 4px;
+}
+
+.search {
+    box-sizing: border-box;
+    min-height: 33px;
+    min-width: 214px;
+    background-color: #78abb5;
+    margin-top: 2px;
+    padding: 6px 5px 5px;
+}
+
+.search:first-child {
+    margin-top: 0;
+}
+
+.search:first-child > .image_left {
+    margin-top: 6px;
+}
+
+.center_text {
+    color: white;
+    font-size: 1.545454em;
+
+}
+
+#main_column {
+    max-width: 932px;
+    margin: 0 auto;
+    font-family: Arial Regular;
+}
+
+.titel {
+    display: inline-block; /*ширина блоку залежить від його вмісту*/
+    box-sizing: border-box;
+    width: auto;
+    /*max-height: 40px;*/
+    height: auto;
+    margin-top: 50px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-left: 285px;
+    padding: 10px 16px;
+
+}
+
+.titel h1 {
+    color: #22a8b2;
+    font-size: 2.181818em;
+}
+
+.center_block {
+    margin-left: 285px;
+    background: -webkit-linear-gradient(to top, rgba(91, 178, 192, 0.3) 0%, rgba(189, 222, 231, 0.8) 50%, rgba(237, 245, 238, 0.8) 100%);
+    background: -moz-linear-gradient(to top, rgba(91, 178, 192, 0.3) 0%, rgba(189, 222, 231, 0.8) 50%, rgba(237, 245, 238, 0.8) 100%);
+    background: -o-linear-gradient(to top, rgba(91, 178, 192, 0.3) 0%, rgba(189, 222, 231, 0.8) 50%, rgba(237, 245, 238, 0.8) 100%);
+    background: linear-gradient(to top, rgba(91, 178, 192, 0.3) 0%, rgba(189, 222, 231, 0.8) 50%, rgba(237, 245, 238, 0.8) 100%);
+    max-width: 550px; /*не знаю чи правильно встановлена ширина*/
+    height: auto;
+    margin-top: 80px;
+    font-size: 1.272727em;
+}
+
+.center_block p {
+    margin-bottom: 20px;
+}
+
+.column_with_text {
+    display: inline-block;
+    max-width: 340px;
+    padding-left: 24px;
+    padding-top: 24px;
+    line-height: 18px;
+    vertical-align: top;
+}
+
+.back_link {
+    display: inline-block;
+    background: url(../img/arrow_left.png) no-repeat 0 50%;
+    padding-left: 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#image_figcuption {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 45px;
+    margin-left: 10px;
+}
+
+.column_with_image {
+    width: 160px;
+    height: 120px;
+    background: url(../img/content_image.jpg) no-repeat 70% 70%;
+}
+
+.figcuption {
+    font-size: 0.75em;
+    font-weight: bold;
+    margin-top: 7px;
+}
+footer {
+    position: absolute;
+    background: white;
+    min-height: 22px;
+    bottom: 0;
+    width: 100%;
+}
+
+#main_footer {
+    box-sizing: border-box;
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#main_footer ul li a {
+    text-decoration: none;
+    color: #22a8b2;
+    padding: 0 6px;
+   /* border-right: 1px solid #22a8b2;*/
+    box-sizing: border-box;
+    line-height: 11px;
+}
+footer li:not(:last-child):after{
+    content: "";
+    display: inline-block;
+    width : 1px;
+    height: 8px;
+    background-color: #22a8b2;
+}
+/*footer li:last-child:after{
+    display: none;
+}*/
+
+#main_footer ul li:hover {
+    background: #22a8b2;
+}
+
+#main_footer ul li:hover a {
+    color: white;
+}
+
+#main_footer ul li {
+    color: #22a8b2;
+    display: inline-block;
+    line-height: 22px;
+}
+
+.footer_nav_1 {
+    float: left;
+}
+
+.footer_nav_2 {
+    float: right;
+}
+
+.footer_nav_1 ul li:last-child a {
+    display: inline-block;
+    background: url("../img/points_arrow_down.png");
+    width: 17px;
+    height: 9px;
+    border-right: none !important;
+    margin-left: 6px;
+}
+
+.footer_nav_2 ul li:last-child {
+    margin-left: 4px;
+}
+
+.footer_nav_1 ul li:last-child a:hover {
+    background: url("../img/points_arrow_up.png");
+}
+
+.footer_nav_1 ul li:last-child:hover {
+    background-color: white !important;
+}
+
+.text_page2 {
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.text_page2 p {
+    display: inline-block;
+    vertical-align: top; /*чому неправильно працюють падінги в тексту,вилазять*/
+    margin: 24px; /*hgbfhdd*/
+}
+
+.column {
+    display: inline-block;
+    vertical-align: top;
+    width: 452px;
+    margin-top: 40px;
+}
+
+.column:first-child {
+    margin-right: 24px;
+}
+
+.bloc {
+    position: relative;
+    min-height: 115px;
+    width: 452px;
+    margin-top: 25px;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.picture {
+    display: inline-block;
+    vertical-align: top;
+    width: 150px;
+    height: 115px;
+}
+
+.text_right {
+    display: inline-block;
+    width: 298px;
+    text-align: left;
+    overflow: hidden;
+}
+
+.picture img {
+    max-width: 100%;
+    margin: -2px 0 0 -2px;
+    overflow: hidden;
+}
+
+.picture .for_img {
+    margin: -2px 0 0 -2px;
+    width: 104%;
+    max-width: none;
+}
+
+.text_right p {
+    margin-top: 10px;
+
+}
+
+.text_right p:last-child {
+    padding-bottom: 30px;
+}
+
+.for_text > p {
+    margin-left: 20px;
+}
+
+.column_down {
+    width: 100px;
+    height: 23px;
+    line-height: 23px;
+    display: inline-block;
+    background: #22a8b2 url("../img/arrow_right.png") no-repeat 85% 50%;
+    padding-right: 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.090909em;
+    position: absolute;
+    bottom: 0;
+    /*left:352px;
+    left: 100%;
+    transform: translateX(-100%);*/
+    right: 0;
+    text-align: center;
+}
+
+.column:last-child .column_down {
+    right: 150px;
+}
+
+/*Page3*/
+.image_left2 {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.text_right2 {
+    position: relative;
+    display: inline-block;
+    width: 340px;
+    padding-left: 24px;
+    line-height: 18px;
+    vertical-align: top;
+}
+
+.new_rules_center_bloc time {
+    float: right;
+    margin-top: 15px;
+}
+
+h2 {
+    float: left;
+    margin-top: 15px;
+}
+
+.new_rules_center_bloc {
+    padding: 0 15px;
+    margin-top: 120px;
+}
+
+.text_right2 a {
+    background: url(../img/arrow_right.png) no-repeat 0 50%;
+    color: #22a8b2;
+}
+
+.image_left2 .column_with_image {
+    width: 160px;
+    height: 170px;
+}
+
+.image_and_text {
+    position: relative;
+    margin-top: 25px;
+}
+
+.text_right2 p {
+    margin-bottom: 13px;
+}
+
+@media screen  and (max-width: 980px) {
+    body{
+        font-size: 13px;
+    }
+    .header_container, .titel{
+        font-size: 11px;
+    }
+    .header_container div{
+        margin-left: 60px;
+    }
+
+    .background1{
+        background-size: cover;
+    }
+
+    .titel {
+        margin-left: 0; /*як посунути тайтл вниз і чи зробити з загальним фонт сайзом для сторінки щось чи писати окремо для тайтл фонт сайз*/
+    }
+    .lang_menu{
+        transform: translateY(-100%);
+    }
+    .center_block{
+        margin-left: 100px;
+    }
+    .footer_nav_1,.footer_nav_2{
+        float: none;
+    }
+    .center_block {
+        width: 100%;
+    }
+    .column_with_text{
+        line-height: 30px;
+        max-width: 450px;
+    }
+    .lang_menu{
+        transform: none;
+    }
+
+}
+
+@media screen  and (max-width: 590px){
+
+    body{
+        font-size: 11px;
+    }
+    .header_container, .titel, footer, .search{
+        font-size: 10px;
+    }
+    .center_block{
+        margin-left: 2px;
+    }
+    .column_with_text {
+        max-width: 300px;
+    }
+    .footer_nav_1,.footer_nav_2{
+        float: none;
+    }
+    .titel{
+        margin-top: 84px;
+    }
+    .column_with_text {
+        line-height: 20px;
+    }
+    #main_footer ul li{
+        line-height: 12px;
+    }
+
+}
+@media screen  and (max-width: 775px){
+
+}
